@@ -61,9 +61,9 @@
                     <field name="parent_id" />
                     <newline />
                     <group expand="0" string="Group By...">
-                        <filter string="Evaluation Type" domain="[]"
+                        <filter string="Evaluation Type" name="evaluation_type" domain="[]"
                             context="{'group_by':'evaluation_type'}" />
-                        <filter string="Parent Course" domain="[]"
+                        <filter string="Parent Course" name="parent_course" domain="[]"
                             context="{'group_by':'parent_id'}" />
                     </group>
                 </search>

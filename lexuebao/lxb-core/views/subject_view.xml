@@ -42,7 +42,7 @@
                     <field name="type" />
                     <newline />
                     <group expand="0" string="分组，按照...">
-                        <filter string="Type" domain="[]"
+                        <filter string="Type" name="type" domain="[]"
                             context="{'group_by':'type'}" />
                     </group>
                 </search>

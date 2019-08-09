@@ -101,10 +101,10 @@
                     <field name="course_id" />
                     <newline />
                     <group expand="0" string="分组，按照...">
-                        <filter string="开始日期" domain="[]"
+                        <filter string="开始日期" name="start_date" domain="[]"
                             context="{'group_by':'start_date'}" />
-                        <filter string="结束日期" domain="[]" context="{'group_by':'end_date'}" />
-                        <filter string="课程" domain="[]" context="{'group_by':'course_id'}" />
+                        <filter string="结束日期" name="end_date" domain="[]" context="{'group_by':'end_date'}" />
+                        <filter string="课程" name="course" domain="[]" context="{'group_by':'course_id'}" />
                     </group>
                 </search>
             </field>

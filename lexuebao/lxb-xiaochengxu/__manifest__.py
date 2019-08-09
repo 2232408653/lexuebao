@@ -22,7 +22,7 @@
     'complexity': "easy",
     'author': 'Scott Liu',
     'website': 'http://www.scott-odoo.com',
-    'depends': ['lxb-core','sale','lxb-crm','lxb-admission'],
+    'depends': ['lxb-core','sale','lxb-crm'],
     'data': [
         'views/parent_menu.xml',
         'views/wxxcx_banner_view.xml',

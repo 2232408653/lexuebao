@@ -36,7 +36,7 @@
                             <field name="sales_count"/>
                             <field name="recommend_status"/>
                             <field name="wxxcx_published"/>
-                            <field name="enrollment_id"/>
+                            <!-- <field name="enrollment_id"/> -->
                             <field name="sequence"/>
                         </group>
                         <group>
@@ -68,9 +68,9 @@
                     <field name="recommend_status" />
                     <field name="wxxcx_published"/>
                     <group expand="0" string="分组,按照...">
-                        <filter string="是否推荐" domain="[]"
+                        <filter name="recommend" string="是否推荐" domain="[]"
                                 context="{'group_by':'recommend_status'}"/>
-                        <filter string="是否上架" domain="[]"
+                        <filter name="published" string="是否上架" domain="[]"
                                 context="{'group_by':'wxxcx_published'}"/>
                     </group>
                 </search>

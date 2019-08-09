@@ -13,6 +13,7 @@ from odoo import models, fields, api
 class ProductTemplate(models.Model):
     _name = 'course.template'
 
+    enrollment_id = fields.Char(string='登记？')
     wxxcx_category_id = fields.Many2one('wxxcx.course.category', string='小程序商城分类', ondelete='set null')
     characteristic = fields.Text('商品特色',related="course_id.info")
     recommend_status = fields.Boolean('是否推荐')
