@@ -116,8 +116,8 @@ class WxxcxUser(http.Controller, BaseController):
             if not code or not encrypted_data or not iv:
                 return self.res_err(300)
 
-            app_id = config.get_config('app_id', sub_domain)
-            secret = config.get_config('secret', sub_domain)
+            app_id = config.get_config_by_subdomain('app_id', sub_domain)
+            secret = config.get_config_by_subdomain('secret', sub_domain)
 
             if not app_id or not secret:
                 return self.res_err(404)

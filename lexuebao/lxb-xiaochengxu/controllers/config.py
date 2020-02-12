@@ -39,12 +39,12 @@ class WxxcxConfig(http.Controller, BaseController):
                 return self.res_err(404)
 
             data = {
-                'creatAt': value_obj.create_date,
+                'creatAt': value_obj.create_date.datetime,
                 'dateType': 0,
                 'id': value_obj.id,
                 'key': key,
                 'remark': '',
-                'updateAt': value_obj.write_date,
+                'updateAt': value_obj.write_date.datetime,
                 'userId': entry.id,
                 'value': config.get_config_by_subdomain(key,sub_domain)
             }
