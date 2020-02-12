@@ -1,4 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 ,,,,,,,
 access_course_template,course_template,model_course_template,,1,0,0,0
-access_wxxcx_banner,wxxcx_banner,model_wxxcx_banner,,1,0,0,0
+access_wxxcx_banner,wxxcx_banner,model_wxxcx_banner,,1,1,1,1
+access_wxxcx_config,access_wxxcx_config,model_wxxcx_config,,1,1,1,1
+access_wxxcx_user,access_wxxcx_user,model_wxxcx_user,,1,1,1,1
+access_wxxcx_payment,access_wxxcx_payment,model_wxxcx_payment,,1,1,1,1
+access_wxxcx_course_category,access_wxxcx_course_category,model_wxxcx_course_category,,1,1,1,1

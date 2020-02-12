@@ -24,3 +24,8 @@ access_lxb_student_course_back_office_admin,name_lxb_student_course_back_office_
 access_hr_employee_student,name_hr_employee_student,hr.model_hr_employee,group_lxb_back_office_admin,1,0,0,0
 access_hr_employee_back_office,name_hr_employee_back_office,hr.model_hr_employee,group_lxb_back_office_admin,1,1,1,0
 access_resource_resource_back_office_admin,name_resource_resource_back_office_admin,resource.model_resource_resource,group_lxb_back_office_admin,1,1,1,0
+access_lxb_schedule_line,access_lxb_schedule_line,model_lxb_schedule_line,base.group_user,1,1,1,1
+access_lxb_appointment,access_lxb_appointment,model_lxb_appointment,base.group_user,1,1,1,1
+access_lxb_timing,access_lxb_timing,model_lxb_timing,base.group_user,1,1,1,1
+access_lxb_class,access_lxb_class,model_lxb_class,base.group_user,1,1,1,1
+
