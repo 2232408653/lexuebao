@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_lxb_student_student,lxb_student_student,model_lxb_student,group_lxb_student,1,0,0,0
+access_lxb_student_student,lxb_student_student,model_lxb_student,group_lxb_student,1,1,0,0
 access_lxb_student_teacher,lxb_student_teacher,model_lxb_student,group_lxb_teacher,1,1,1,0
 access_teacher_student_back_office,name_lxb_student_back_office,model_lxb_student,group_lxb_back_office,1,1,1,1
 access_lxb_course_student,name_lxb_course_student,model_lxb_course,group_lxb_student,1,0,0,0
