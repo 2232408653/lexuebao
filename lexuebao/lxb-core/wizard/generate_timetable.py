@@ -77,9 +77,9 @@ class GenerateSession(models.TransientModel):
         :return:
         '''
         for session in self:
-            start_date = datetime.datetime.strptime(
-                session.start_date, '%Y-%m-%d')
-            end_date = datetime.datetime.strptime(session.end_date, '%Y-%m-%d')
+            #print(session.start_date.type)
+            start_date = session.start_date
+            end_date = session.end_date
 
             for n in range((end_date - start_date).days + 1):
                 curr_date = start_date + datetime.timedelta(n)
