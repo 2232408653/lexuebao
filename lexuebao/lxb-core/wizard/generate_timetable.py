@@ -77,7 +77,6 @@ class GenerateSession(models.TransientModel):
         :return:
         '''
         for session in self:
-            #print(session.start_date.type)
             start_date = session.start_date
             end_date = session.end_date
 
