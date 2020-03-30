@@ -56,7 +56,7 @@ class LxbStudent(models.Model):
     already_partner = fields.Boolean('老学员?')
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
-    #修改学号为时间戳,基本上以低于0.01秒为单位,不会造成重复,需要使用lambda表达式否则会无法改变
+    #修改学号为时间戳,基本上以低于0.01秒为单位,不会造成重复,需要使用lambda表达式否则会无法改变,可以使用readonly来进行修饰,使得不可以通过前端界面修改,保障唯一性
     gr_no = fields.Char("学号",required=True,default=lambda a:int(time.time()*100))
     course_detail_ids = fields.One2many('lxb.student.course', 'student_id',
                                         '课程信息')
