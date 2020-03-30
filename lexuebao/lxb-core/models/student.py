@@ -13,6 +13,7 @@
 
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
+import time
 
 
 class LxbStudentCourse(models.Model):
@@ -42,11 +43,11 @@ class LxbStudent(models.Model):
     _name = 'lxb.student'
     _inherits = {'res.partner': 'partner_id'}
 
-    birth_date = fields.Date('Birth Date')
+    birth_date = fields.Date('生日')
 
     gender = fields.Selection(
         [('m', '男'), ('f', '女'),
-         ('o', '其他')], '性别')
+         ('o', '其他')], '性别',default='m')
     nationality = fields.Many2one('res.country', '国家')
     emergency_contact = fields.Many2one(
         'res.partner', '紧急联系人')
@@ -55,7 +56,8 @@ class LxbStudent(models.Model):
     already_partner = fields.Boolean('老学员?')
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
-    gr_no = fields.Char("学号", size=20,required=True)
+    #修改学号为时间戳,基本上以低于0.01秒为单位,不会造成重复,需要使用lambda表达式否则会无法改变
+    gr_no = fields.Char("学号",required=True,default=lambda a:int(time.time()*100))
     course_detail_ids = fields.One2many('lxb.student.course', 'student_id',
                                         '课程信息')
     company_id = fields.Many2one('res.company', '公司', required=True,

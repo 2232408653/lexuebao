@@ -33,5 +33,14 @@ class LxbClass(models.Model):
     @api.multi
     def compute_student_no(self):
         for record in self:
-            record.student_no = record.student_ids.size() if record.student_ids else 0
+            # print(record.student_ids.type)
+            # print(record.student_ids.__class__)
+            # print(record.student_ids.__str__())
+            # print(record.student_ids.__dict__)
+            cont=0
+            for items in record.student_ids:
+                cont=cont+1
+                #print(items.gr_no,cont)
+            record.student_no=cont
+            #record.student_no = record.student_ids.size() if record.student_ids else 0
 
