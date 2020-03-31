@@ -12,10 +12,7 @@
             <field name="auto_delete" eval="False" />
             <field name="body_html"><![CDATA[
                 <ul class="o_mail_thread_message_tracking">
-                    <li>
-                        Faculty:
-                            <span> ${object.faculty_id.name} </span>
-                    </li>
+
                     <li>
                         Subject:
                             <span> ${object.subject_id.name} </span>
@@ -24,14 +21,8 @@
                         Course:
                             <span> ${object.course_id.name} </span>
                     </li>
-                    <li>
-                        Batch:
-                            <span> ${object.batch_id.name} </span>
-                    </li>
-                    <li>
-                        Classroom:
-                            <span> ${object.classroom_id.name} </span>
-                    </li>
+
+
                     <li>
                         Start Time:
                             <span> ${format_tz(object.start_datetime, tz=user.tz, format='%B %d, %Y %I:%M %p')} </span>
