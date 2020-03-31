@@ -93,13 +93,13 @@
                     <filter string="今日" name="today"
                         domain="[('start_datetime', '&gt;=', time.strftime('%%Y-%%m-%%d 00:00:00')),('start_datetime', '&lt;=', time.strftime('%%Y-%%m-%%d 23:59:59'))]" />
                     <group expand="0" string="分组,按照...">
-                        <filter string="Faculty" domain="[]" name="faculty"
+                        <filter string="teacher_id" domain="[]" name="teacher"
                             context="{'group_by':'teacher_id'}" />
-                        <filter string="Course" domain="[]" name="course"
-                            context="{'group_by':'course_id'}" />
-                        <filter string="Batch" domain="[]" name="batch"
+<!--                        <filter string="course_id" domain="[]" name="course_id"-->
+<!--                            context="{'group_by':'course_id'}" />-->
+                        <filter string="schedule_id" domain="[]" name="schedule"
                             context="{'group_by':'schedule_id'}" />
-                        <filter string="Period" domain="[]" name="period"
+                        <filter string="timing_id" domain="[]" name="timing"
                             context="{'group_by':'timing_id'}" />
                         <filter string="Subject" domain="[]" name="subject"
                             context="{'group_by':'subject_id'}" />
