@@ -30,7 +30,8 @@
                     <sheet>
                         <div class="oe_title">
                             <h2>
-                                <field name="course_id" />
+                                课程
+                                <field name="course_id" placeholder="请选择与排课相关的课程"/>
                                 <button type="object"
                                        class="oe_right oe_stat_button"
                                         id="timetable_button"
