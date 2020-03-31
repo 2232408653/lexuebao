@@ -25,11 +25,11 @@
             <field name="arch" type="xml">
                 <form string="课程">
                     <header>
-                        <button name="%(act_open_generate_time_table_view)d"
-                            string="批量创建" type="action"
-                                context="{'schedule_id':id}"
-                            class="oe_highlight"
-                            />
+<!--                        <button name="%(act_open_generate_time_table_view)d"-->
+<!--                            string="批量创建" type="action"-->
+<!--                                context="{'schedule_id':id}"-->
+<!--                            class="oe_highlight"-->
+<!--                            />-->
                         <button type="object" name="lecture_confirm"
                             states="draft" string="确认"
                             groups="lxb-core.group_lxb_teacher"
