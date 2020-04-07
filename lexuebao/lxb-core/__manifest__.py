@@ -19,8 +19,8 @@
     "sequence": 1,
     'summary': '培训机构教务管理',
     'complexity': "easy",
-    'author': 'Scott Liu',
-    'website': 'http://www.scott-odoo.com',
+    'author': 'Ding Shuo',
+    'website': 'https://odoo12.xyz',
     'depends': ['board', 'document', 'hr', 'web', 'website'],
     'data': [
         'wizard/teacher_create_employee_wizard_view.xml',
