@@ -20,8 +20,8 @@
     'sequence': 3,
     'summary': "客户运营中心""",
     'complexity': "easy",
-    'author': 'Scott Liu',
-    'website': 'http://www.scott-odoo.com',
+    'author': 'Ding Shuo',
+    'website': 'https://odoo12.xyz',
     'depends': ['lxb-core','crm'],
     'data': [
         'menu/crm_menu.xml',
