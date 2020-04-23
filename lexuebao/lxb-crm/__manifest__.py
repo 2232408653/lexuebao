@@ -24,6 +24,7 @@
     'website': 'https://odoo12.xyz',
     'depends': ['lxb-core','crm'],
     'data': [
+        'security/crm_security.xml',
         'menu/crm_menu.xml',
         'views/res_partner_view.xml',
         'views/student_view.xml'
